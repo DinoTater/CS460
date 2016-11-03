@@ -8,14 +8,16 @@ typedef unsigned long  u32;
 #define null        0
 
 /******* PROC status ********/
-#define FREE        0
-#define READY       1
-#define RUNNING     2
-#define STOPPED     3
-#define SLEEP       4
-#define ZOMBIE      5
+#define FREE      0    /* PROC status */
+#define READY     1 
+#define RUNNING   2
+#define SLEEP     2
+#define ZOMBIE    3
+#define BLOCK     4
 #define READ_PIPE   4
 #define WRITE_PIPE  5
+#define INT_CTL     0X20
+#define ENABLE      0X20
 
 #define NOFT        20
 #define NFD         10
